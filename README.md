@@ -15,11 +15,11 @@ La Phase 1 contient les écrans de démarrage, connexion par téléphone, liste 
 
 L’authentification OTP et les écritures Supabase seront connectées dans l’itération suivante ; les maquettes ne collectent encore aucune donnée réelle.
 
-## Déploiement sur Vercel
+## Déploiement statique sur Vercel
 
-Vercel détecte automatiquement Next.js : aucun fichier de configuration spécifique n'est requis.
+La version de déploiement initiale est en HTML, CSS et JavaScript pur : aucune installation de dépendances ni compilation Node.js n'est nécessaire. Le fichier `vercel.json` force Vercel à servir les fichiers HTML statiques.
 
 1. Importer ce dossier dans un dépôt GitHub, GitLab ou Bitbucket.
 2. Dans Vercel, sélectionner **Add New → Project**, puis importer le dépôt.
-3. Laisser le framework sur **Next.js** et exécuter le déploiement.
-4. Dans **Settings → Environment Variables**, ajouter les deux variables du fichier `.env.example` avant de connecter Supabase.
+3. Choisir le framework **Other**, laisser la commande de build vide, puis exécuter le déploiement.
+4. La page d’accueil sera disponible sur `/` et la connexion sur `/connexion`.
