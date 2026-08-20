@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d6b5a" />
+    <meta name="description" content="Mwana+ — carnet de santé de l'enfant" />
+    <title>Mwana+ | Santé de l'enfant</title>
+    <style>
+      :root { --green: #0d6b5a; --ink: #14332c; --cream: #f7faf8; --line: #d7e4df; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--cream); color: var(--ink); font: 17px/1.5 system-ui, sans-serif; }
+      main { max-width: 620px; margin: auto; padding: 24px 20px 48px; }
+      header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 44px; }
+      header b { font-size: 28px; color: var(--green); } header b span { color: #ef7b45; }
+      small, .hint { color: #63766f; font-size: 14px; }
+      .eyebrow { color: var(--green); font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+      h1 { font-size: 38px; line-height: 1.08; margin: 8px 0 18px; }
+      .hero { padding: 8px 0 30px; }
+      .button { display: inline-block; margin-top: 14px; padding: 14px 18px; border-radius: 12px; background: var(--green); color: #fff; font-weight: 700; text-decoration: none; }
+      .cards { display: grid; gap: 12px; } .card { padding: 17px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+      .card strong, .card span { display: block; } .card span { color: #63766f; font-size: 14px; }
+      @media (min-width: 560px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header><b>Mwana<span>+</span></b><small>Cameroun · Santé de l'enfant</small></header>
+      <section class="hero">
+        <p class="eyebrow">0 à 5 ans</p>
+        <h1>Le carnet de santé, simplement.</h1>
+        <p>Gardez les mesures, vaccins et étapes de développement de votre enfant, même avec une connexion faible.</p>
+        <a class="button" href="/connexion">Commencer avec mon numéro</a>
+        <p class="hint">Aucun e-mail nécessaire.</p>
+      </section>
+      <section class="cards">
+        <article class="card"><strong>⚖️ Mesures</strong><span>Suivez la croissance</span></article>
+        <article class="card"><strong>💉 Vaccins</strong><span>Ne manquez aucun rendez-vous</span></article>
+        <article class="card"><strong>🌱 Développement</strong><span>Accompagnez chaque étape</span></article>
+      </section>
+    </main>
+  </body>
+</html>
